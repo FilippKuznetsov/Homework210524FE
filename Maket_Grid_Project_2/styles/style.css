@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    margin: 0 auto;
+   max-width: 1512px;
+   padding: 28px 198px 28px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 185px;
+}
+
+header a{
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color:  #222222;
+   
+    
+
+
+}
+
+ul {
+    
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 671px;
+    height: 43px;
+    list-style: none;
+    
+}
+
+
+
+main {
+    margin: 0 auto;
+    background-color: #EBEBEB;
+    max-width: 1512px;
+    padding: 140px 198px ;
+}
+
+main h3 {
+    color: #BDBDBD;
+    
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 40px;
+
+}
+
+main h2 {
+    color:  #333333;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    
+
+}
+.main-cards {
+    display: flex;
+    width: 1110px;
+    height: 760px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    position: relative;
+    background-image: url(../media/Rectangle\ 2.png);
+    background-size: cover;
+    color: white;
+
+    width: 350px;
+    height: 360px;
+    
+   padding:261px  118px  45px 45px;
+   font-family: Lato;
+    font-size: 24px;
+    font-weight: 900;
+    transition: 1s ease;
+
+
+}
+
+.card-item::before {
+    content: "";
+    transition: 0,99s ease;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card-item:hover::before {
+   background-color:  #005FA3;;
+   ;
+    
+}
+
+.card-item p {
+    position: relative; /* Для того чтобы текст был поверх псевдоэлемента */
+    z-index: 2;
+}
+
+
+
+
+/*section */
+
+section {
+    margin: 0 auto;
+    padding: 140px 217px 131px 185px;
+    max-width: 1512px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:125px ;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    
+    flex:1;
+}
+
+.description h2{
+    
+font-family:"Lato",sans-serif;
+font-size: 24px;
+font-weight:500;
+color:  #BDBDBD;
+width: 155px;
+height: 23px;
+}
+.description h3 {
+    width: 347px;
+    height: 117px;
+   
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top:40px ;
+
+}
+.description span {
+    color: #005FA3;
+    
+}
+
+
+.description p {
+margin-top:60px;
+width: 445px;
+height: 245px;
+
+font-family: "Lato",sans-serif;
+font-size: 18px;
+font-weight: 300;
+
+
+
+}
+.section-card {
+margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1;
+    gap: 30px;
+
+}
+.section-card-item{
+    position: relative;
+    background-color: #EBEBEB;
+    width: 255px;
+    height: 255px;
+    padding-left:40px ;
+    display: flex;
+    flex-direction: column;
+}
+.section-card-item h2 {
+    margin-top: 30px;
+    font-family: "Lato", sans-serif;
+    font-size: 55px;
+
+
+}
+.section-card-item p {
+
+    font-family:  "Lato", sans-serif;;
+    font-size: 14px;
+    width: 107px;
+    height: 37px;
+    
+    
+    margin-top:30px ;
+
+
+}
+.section-card-item a {
+
+    margin-top: 40px;
+    font-family:" Lato",sans-serif;
+    font-size: 14px;
+}
+
+.section-card-item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.3s ease;
+    z-index: 1;
+    
+}
+
+
+.section-card-item:hover::before{
+
+    background-color: rgba(0, 95, 163, 0.7);
+    
+
+
+}
+
+
+.section-card-item h2,
+.section-card-item p,
+.section-card-item a {
+    position: relative;
+    z-index: 2; 
+     /* Чтобы текст был поверх псевдоэлемента  */
+     
+}
+
+
+.section-card-item:hover h2,
+.section-card-item:hover p,
+.section-card-item:hover a {
+    color: white; /* Изменение цвета текста при наведении */
+}
+
+.footer-first{
+    background-image: url(../media/Rectangle\ \(4\).png);
+    
+    height: 600px;
+    max-width: 1512px;
+    margin: 0 auto;
+    color: white;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.footer-contact {
+margin:60px auto ;
+
+}
+
+
+.footer-contact h2{
+   margin: 122px auto;
+    width: 445px; 
+    height: 47px; 
+
+    font-family: Merriweather;
+    font-size: 48px;
+}
+
+.footer-contact p {
+
+    margin: 60px auto;
+    font-family:" Lato",sans-serif;
+    font-size: 18px;
+    
+    width: 445px;
+    height: 43px;
+    color: #FFFFFF;
+    
+}
+
+.contact_links {
+    width: 445px;
+    margin: 80px auto;
+    display: flex;
+    gap: 40px;
+    
+}
+
+.contact_links #link-1,#link-2 {
+color: white;
+}
+
+
+.div-input-initial {
+    margin-top: 190px;
+
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.div-input-initial label {
+    width: 255px;
+    height: 67px;
+}
+.div-input-initial label h2 {
+    width: 125px;
+    height: 16px;
+    margin-bottom: 20px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    
+    font-weight: 100 !important;
+
+}
+.div-input-initial label input {
+background-color: transparent;
+width: 255px;
+height: 50px;
+border: none;
+border-bottom: 2px solid white;
+
+}
+.div-input-initial label input::placeholder {
+ font-size: 21px;
+}
+
+
+
+.message {
+    margin-top: 35px;
+
+    
+}
+
+.message label h2 {
+    font-family: Lato,sans-serif;
+    font-size: 16px;
+    
+    text-align: left;
+    font-weight: 100;
+}
+
+.message label textarea {
+    width: 540px;
+    height: 120px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+
+.message label textarea::placeholder {
+    padding-top: 15px;
+    font-family: Lato,sans-serif;
+    font-size: 21px;
+
+
+}
+.message button {
+    width: 270px;
+    height: 60px;
+    background-color: #005FA3;
+    color: white;
+    margin-left:270px ;
+    margin-top:50px ;
+    transition: 1s ease;
+    
+}
+.message button:hover{
+    background-color: #063455;
+    width: 271px;
+    height: 61px;
+}
