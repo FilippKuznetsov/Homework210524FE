@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 10px 135px;
+    font-family: 'Inter', sans-serif;
+    z-index: 1;
+
+}
+
+header .logo {
+    
+    display: flex;
+    align-items: center;
+
+    width: 200px;
+    height: 64px;
+    
+
+}
+
+header .logo h3 {
+    font-size: 48px;
+    font-weight: 550;
+   
+}
+
+nav ul  {
+    list-style:none ;
+    display: flex;
+    /* margin:24px  auto; */
+    justify-content: center;
+    
+    gap: 25px;
+    position: relative;
+}
+nav ul::before{
+    width: 1376.03px;
+    height: 767.91px;
+    bottom: -240px;
+    left: 530px;
+
+    gap: 0px;
+    border-radius: 99px ;
+    transform: rotate(315deg);
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background-color: blanchedalmond;
+}
+
+
+nav ul li{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li a  {
+    color: blue;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-weight: 400;
+    /* position: relative; */
+   /*  display: inline-block; */
+}
+nav ul li a::before {
+    content: '•' ;
+     color: yellow; 
+   /*  font-size: 20px; */ 
+    margin-right: 8px; 
+    transition: color 0.3s;
+   /*  position: absolute; */
+    }
+    
+
+nav ul li a:hover::before {
+    content: '';
+}
+
+nav ul li a:hover {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+
+header button {
+    margin-right: 135px;
+    width: 170px;
+    height: 64px;
+    background-color: rgba(108, 92, 231, 1);
+    border-radius: 999px;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+}
+header button:hover{
+    box-shadow: 2px 2px 2px black;
+    font-weight: 700;
+}
+
+
+
+
+ main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+   
+    
+ }
+ 
+ main h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 104px;
+    font-family: Inter;
+    font-size: 96px;
+    line-height: 104px;
+    margin-bottom: 16px;
+    
+
+ }
+
+ main h2{
+    
+   width: 770px;
+    height: 80px;
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 77.45px;
+    margin-bottom: 64px;
+
+ }
+
+
+.container{
+    width: 1170px;
+    height: 766px;
+ /*    border: 1px solid black;
+    border-radius:10px ; */
+    gap: 30px;
+    display: flex;
+
+    
+}
+
+.cards{
+  /*   border: 2px solid black;
+    border-radius: 5px; */
+}
+
+.block1{
+    width: 270px;
+    height: 766px;
+   
+   display: flex;
+   flex-direction: column;
+   
+   
+}
+.block1 .cards{
+    width: 270px;
+}
+
+.block1 .card-1 {
+   
+  
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+    height: 102px;
+  
+    display: flex;
+    
+}
+.block1 .card-2 {
+    margin-top: 16px;
+    padding: 16px;
+    height: 464px;
+   
+    display: flex;
+    
+    background-image: url(../media/img-1\ .png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.card-2 p{
+    padding-top: 30px;
+    
+    text-align: center;
+    align-items: center;
+    font-family: Inter, sans-serif;
+}
+.card-2 p:nth-child(1){
+   
+   
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    
+    
+}
+.card-2 p:nth-child(2){
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.block1 .card-3{
+    margin-top: 30px;
+   /*  width: 270px; */
+    height: 82px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(108, 92, 231, 1) ;
+    color: white;
+   
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    border: none;
+
+
+}
+
+.card-3:hover{
+    font-size: 36px;
+  /*   border: 1px solid black; */
+    box-shadow: 2px 2px 2px gray;
+}
+.block2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.block2-1{
+    width: 870px;
+    height: 380px;
+   /*  border: 1px solid black;
+    border-radius:10px ; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.block2-1 .card-4{
+    width:470px;
+    height: 380px;
+    background-image: url(../media/Img-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    color: white;
+   
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1px;
+    text-align: center;
+    align-items: end;
+    padding-bottom: 16px;
+
+
+}
+
+
+.block2-1-2{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.card-5{
+    margin-top: 80px;
+    
+   width:370px ;
+   height: 78px;
+   font-family: Inter;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left;
+
+
+}
+
+.elem{
+     
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   
+}
+
+.elem .card-6,.elem .card-7{
+    width: 170px;
+    height: 222px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.elem .card-6{
+    background-image: url(../media/img-3.png);
+    
+}
+.elem .card-7{
+    background-image: url(../media/img-4.jpg);
+}
+.block2-2{
+    
+    margin-top:30px ;
+    width: 870px;
+    height: 356px;
+   /*  border: 1px solid black;
+    border-radius:10px ; */
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+ .card-8,.card-9,.card-10{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.block2-2 .card-8{
+    width:270px;
+    height: 284px;
+    background-image: url(../media/img-5.png);
+   
+}
+.block2-2 .card-9{
+width: 370px;
+height: 356px;
+background-image: url(../media/img-6.png);
+}
+
+.block2-2 .card-10{
+    width: 170px;
+    height: 222px;
+    background-image: url(../media/img-7.png);
+}
